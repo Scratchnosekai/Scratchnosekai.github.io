@@ -9,10 +9,6 @@ body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
-h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 文字に影をつける */
-}
-
 input[type="text"] {
   border: 2px solid #ccc;
   border-radius: 5px;
