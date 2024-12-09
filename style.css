@@ -28,10 +28,3 @@ body {
 .submit-button:hover {
   background-color: #3e8e41;
 }
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
