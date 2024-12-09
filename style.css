@@ -1,27 +1,33 @@
-/* style.css */
 body {
-  background-color: #f0f0f0; /* 薄いグレー */
+  background: linear-gradient(to bottom right, #f2f2f2, #e0e0e0); /* グラデーション背景 */
   font-family: 'Comic Sans MS', cursive; /* 手書き風フォント */
 }
+
 .title {
   color: #333;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .answer-box {
   border: 2px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 15px;
 }
+
 .submit-button {
   background-color: #4CAF50; /* 緑色 */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #3e8e41;
+}
   color: white;
   padding: 10px 20px;
   border: none;
