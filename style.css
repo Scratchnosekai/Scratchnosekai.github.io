@@ -1,6 +1,12 @@
+/* style.css */
+@font-face {
+  font-family: 'Zen Kaku Gothic New';
+  src: url('fonts/ZenKakuGothicNew-Regular.ttf') format('truetype'),
+       url('fonts/ZenKakuGothicNew-Bold.ttf') format('truetype');
+}
+
 body {
-  background: linear-gradient(to bottom, #f0f0f0, #d3d3d3); /* 壁と床のグラデーション */
-  font-family: 'Comic Sans MS', cursive; /* 手書き風フォント */
+  font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
 h1 {
