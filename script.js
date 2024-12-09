@@ -1,5 +1,5 @@
 // 正しい暗号
-const correctAnswer = "secret_code"; // ここに実際の暗号を設定
+const correctAnswer = "答え"; // ここに実際の暗号を設定
 
 // 答えをチェックする関数
 function checkAnswer() {
