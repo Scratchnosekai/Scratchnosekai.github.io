@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>運動委員会 脱出ゲーム</title>
-  <link rel="stylesheet" href="style.css"> </head>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <div class="game-container">
-    <h1>教室から脱出しよう</h1>
-    <div class="progress-bar"></div> <p>暗号を解いて、教室から脱出しよう！</p>
-    <form>
-      <input type="text" id="answer" placeholder="ここに暗号を入力">
+  <section class="game-container">
+    <h1>教室から脱出しよう！</h1>
+    <section class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </section>
+    <p>問題を解いて、教室から脱出せよ！</p>
+    <div id="question"></div> <form>
+      <label for="answer">答えを入力:</label>
+      <input type="text" id="answer" name="answer">
       <button type="button" onclick="checkAnswer()">送信</button>
     </form>
     <p id="result"></p>
-  </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
