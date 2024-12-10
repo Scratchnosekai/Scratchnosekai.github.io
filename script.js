@@ -1,7 +1,7 @@
 let questions = [
-  { question: "最初の問題は？", answer: "答え1" },
-  { question: "次の問題は？", answer: "答え2" },
-  { question: "最後の問題は？", answer: "答え3" }
+  { question: "問題1", answer: "みやぎ" },
+  { question: "問題2", answer: "しろばと" },
+  { question: "問題3", answer: "いしのまき" }
 ];
 let currentQuestion = 0;
 
