@@ -1,15 +1,26 @@
-// 正しい暗号
-const correctAnswer = "みやぎ"; // ここに実際の暗号を設定
+let questions = [
+  { question: "最初の問題は？", answer: "答え1" },
+  { question: "次の問題は？", answer: "答え2" },
+  { question: "最後の問題は？", answer: "答え3" }
+];
+let currentQuestion = 0;
 
-// 答えをチェックする関数
 function checkAnswer() {
   const answerInput = document.getElementById("answer");
-  const resultElement = document.getElementById("result");
+  const userAnswer = answerInput.value;
+  const correctAnswer = questions[currentQuestion].answer;
 
-  if (answerInput.value.toLowerCase() === correctAnswer.toLowerCase()) {
-    resultElement.textContent = "正解！脱出成功！";
-    // 脱出成功時の処理 (例: 画面遷移、ゲームクリアメッセージ)
+  if (userAnswer === correctAnswer) {
+    document.getElementById("result").textContent = "正解！";
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+      document.getElementById("question").textContent = questions[currentQuestion].question;
+      answerInput.value = "";
+    } else {
+      document.getElementById("question").textContent = "ゲームクリア！";
+      answerInput.disabled = true;
+    }
   } else {
-    resultElement.textContent = "不正解！もう一度考えてみよう！";
+    document.getElementById("result").textContent = "不正解！";
   }
 }
